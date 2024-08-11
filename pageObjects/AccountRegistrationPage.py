@@ -46,7 +46,6 @@ class AccountRegistration:
                 return
             except ElementClickInterceptedException:
                 time.sleep(1)
-        raise
 
     def clickCOntinue(self):
         button = WebDriverWait(self.driver, 10).until(

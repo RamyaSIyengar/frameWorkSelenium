@@ -11,3 +11,12 @@ class ReadConfig:
     def getApplicationURL():
         url = config.get('commonInfo', 'baseURL')
         return url
+    @staticmethod
+    def getEmail():
+        email = config.get('commonInfo', 'email')
+        return email
+
+    @staticmethod
+    def getpasswd():
+        passwd = config.get('commonInfo', 'passwd')
+        return passwd
