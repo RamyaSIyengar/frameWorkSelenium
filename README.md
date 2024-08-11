@@ -42,7 +42,7 @@ Create requirements.txt file contains all packages and install it.
 ## 6.1: Add customLogger.py under utilities package.
 	6.2: Add logs to AccountRegistration test case.
 		
-Step 7:  Run Tests on Desired Browser(Cross Browser Testing)/Parallel
+## Step 7:  Run Tests on Desired Browser(Cross Browser Testing)/Parallel
 
 	7.1: update contest.py with required fixtures which will accept command line argument (browser).
 7.2: Pass browser name as argument in command line
