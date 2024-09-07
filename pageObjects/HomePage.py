@@ -13,8 +13,8 @@ class HomePage:
     # Locators
     link_myaccount_xpath = "//li[@class='list-inline-item'][2]"
     link_wishlist_xpath = "//span[normalize-space()='Wish List (0)']"
-    link_register_linkText = "Register"
-    # link_register_xpath = "(//div[@class='dropdown'])[2]/ul/li[1]"
+    # link_register_linkText = "Register"
+    link_register_xpath = "(//div[@class='dropdown'])[2]/ul/li[1]"
     link_login_linkText = "Login"
 
     # constructor
@@ -29,16 +29,12 @@ class HomePage:
         element =WebDriverWait(self.driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, self.link_wishlist_xpath)))
 
-
-
-
     def clickRegister(self):
         register_element = WebDriverWait(self.driver, 10).until(
             EC.element_to_be_clickable((By.LINK_TEXT, self.link_register_linkText))
         )
         print(register_element.text)
         register_element.click()
-
 
 
     def clickLogin(self):
