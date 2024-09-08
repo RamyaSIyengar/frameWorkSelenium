@@ -74,9 +74,7 @@ Step 11: Grouping Tests
 @pytest.mark.sanity
 @pytest.mark.regression
 
-11.2: Add Marker entries in pytest.ini file
-pytest.ini
---------
+11.2 add markers to pytest.ini 
 [pytest]
 markers =
     sanity
